@@ -87,7 +87,7 @@ class _TestState extends State<Test> {
                 ),
                 SidebarXItem(
                   icon: Icons.search,
-                  label: 'Search',
+                  label: 'Reports',
                   onTap: () {
                     setState(() {
                       _controller.selectIndex(1);

@@ -1,4 +1,5 @@
 import 'package:asd/screen/homeScreen.dart';
+import 'package:asd/screen/reportsScreen.dart';
 import 'package:flutter/material.dart'; // Импортируем наш новый экран
 
 class BodyScreen extends StatelessWidget {
@@ -12,7 +13,7 @@ class BodyScreen extends StatelessWidget {
       case 0: // Home
         return const HomeScreen(); // Заменяем на наш новый экран
       case 1: // Search
-        return _buildSearchScreen();
+        return const ReportsScreen();
       case 2: // qwe
         return _buildQweScreen();
       case 3: // asd
@@ -25,18 +26,18 @@ class BodyScreen extends StatelessWidget {
   }
 
   // Остальные методы остаются без изменений
-  Widget _buildSearchScreen() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(Icons.search, size: 64, color: Colors.white),
-          SizedBox(height: 20),
-          Text('Поиск', style: TextStyle(color: Colors.white, fontSize: 24)),
-        ],
-      ),
-    );
-  }
+  // Widget _buildSearchScreen() {
+  //   return Center(
+  //     child: Column(
+  //       mainAxisAlignment: MainAxisAlignment.center,
+  //       children: [
+  //         Icon(Icons.search, size: 64, color: Colors.white),
+  //         SizedBox(height: 20),
+  //         Text('Поиск', style: TextStyle(color: Colors.white, fontSize: 24)),
+  //       ],
+  //     ),
+  //   );
+  // }
 
   Widget _buildQweScreen() {
     return Center(
