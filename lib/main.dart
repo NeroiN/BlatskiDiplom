@@ -1,12 +1,21 @@
 // import 'package:asd/screen/home.dart';
 import 'package:asd/screen/homeScreen.dart';
-import 'package:asd/screen/test.dart';
+import 'package:asd/screen/sidebar.dart';
+import 'package:asd/screen/timer/timerScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:sidebarx/sidebarx.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => TimerProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
+
+// const MyApp(),
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
