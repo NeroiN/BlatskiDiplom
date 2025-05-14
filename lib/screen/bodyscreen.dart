@@ -2,6 +2,7 @@ import 'package:asd/screen/homeScreen.dart';
 // import 'package:asd/screen/reportsScreen.dart';
 import 'package:asd/screen/timer/timerScreen.dart';
 import 'package:asd/screen/tracker/ActivityTrackerApp.dart';
+import 'package:asd/screen/viewing/ScreenCapturePage.dart';
 import 'package:flutter/material.dart'; // Импортируем наш новый экран
 
 class BodyScreen extends StatelessWidget {
@@ -17,7 +18,7 @@ class BodyScreen extends StatelessWidget {
       case 1: // Search
         return ActivityTrackerApp();
       case 2: // qwe
-        return _buildQweScreen();
+        return ScreenshotPage();
       case 3: // asd
         return _buildAsdScreen();
       case 4: // Settings
