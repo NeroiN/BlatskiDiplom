@@ -3,6 +3,8 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  hotkey_manager
+  screen_capturer
   screen_retriever
   window_manager
 )
